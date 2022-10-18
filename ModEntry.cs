@@ -22,7 +22,6 @@ namespace weatherGod
         /// <param name="helper">Provides simplified APIs for writing mods.</param>
         public override void Entry(IModHelper helper)
         {
-            // helper.Events.Input.ButtonPressed += this.OnButtonPressed;
             helper.Events.GameLoop.GameLaunched += GameStart;
             helper.Events.Input.ButtonPressed += ButtonPressed;
 
@@ -32,7 +31,6 @@ namespace weatherGod
         /*********
         ** Private methods
         *********/
-        /// <summary>Raised after the player presses a button on the keyboard, controller, or mouse.</summary>
         /// <param name="sender">The event sender.</param>
         /// <param name="e">The event data.</param>
         private void OnButtonPressed(object sender, ButtonPressedEventArgs e)
@@ -40,16 +38,6 @@ namespace weatherGod
             // ignore if player hasn't loaded a save yet
             if (!Context.IsWorldReady)
                 return;
-
-            // print button presses to the console window
-            //this.Monitor.Log($"{Game1.player.Name} pressed {e.Button}.", LogLevel.Debug);
-            //ICursorPosition cursorPos = this.Helper.Input.GetCursorPosition();
-
-            /*
-            if ()){
-                this.Monitor.Log($"LETS FUCKING GOOOOOOO", LogLevel.Debug);
-
-            }*/
         }
 
         private void GameStart(object sender, GameLaunchedEventArgs e)
@@ -78,10 +66,6 @@ namespace weatherGod
                 "Button used to change weather",
                 () => _config.Keybind,
                 (button) => _config.Keybind = button);
-            /*configMenuApi.RegisterSimpleOption(ModManifest, "just testing",
-                "testing woooooo",
-                () => _config.Checking,
-                (int value) => _config.Checking = value);*/
                 
         }
 
@@ -133,7 +117,6 @@ namespace weatherGod
 
                 }
 
-               //Game1.updateWeatherIcon();
             }
         }
 
