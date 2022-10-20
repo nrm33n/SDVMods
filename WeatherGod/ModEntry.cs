@@ -43,18 +43,22 @@ namespace weatherGod
         private void GameStart(object sender, GameLaunchedEventArgs e)
         {
             this._config = this.Helper.ReadConfig<ModConfig>();
+            //using a try catch block so not having it installed doesn't break the code! 
             try
             {
+                //generic mod config menu
                 UseGMCM();
             }
             catch (Exception ex)
             {
+                //not fatal error 
                 Monitor.Log($"Hey, you need to install GenericModConfigMenuAPI", LogLevel.Debug);
             }
         }
 
         private void UseGMCM()
         {
+            //this is here so the user can change which key affects the weather 
            GenericModConfigMenuAPI configMenuApi =
                 Helper.ModRegistry.GetApi<GenericModConfigMenuAPI>("spacechase0.GenericModConfigMenu");
 
@@ -71,6 +75,7 @@ namespace weatherGod
 
         private void ButtonPressed(object o, ButtonPressedEventArgs button)
         {
+            //change weather cyclically on button press 
             SButton b = button.Button;
            string[] Weathers = { "rain", "storm", "snow", "debris", "sun" };
             if (b == _config.Keybind)
@@ -87,6 +92,7 @@ namespace weatherGod
                 Game1.isSnowing = false;
                 Game1.isDebrisWeather = false;
 
+                //switch statement to cycle thru weather
                 switch (Counter)
                 {
                     case 0:
