@@ -2,9 +2,9 @@
 stardew mod dump 
 
 Here's where I'm storing the mods I make for Stardew Valley! 
-Check them out on Nexus Mods at: https://www.nexusmods.com/users/154664358
+Check them out on <a href="https://www.nexusmods.com/users/154664358">Nexus</a> and ModDrop.
 
-I currently have: 
+Current:
 * WeatherGod Mod which allows your character to change the weather by cycling through each weather at a customizeable keypress 
 
 Coming up:
