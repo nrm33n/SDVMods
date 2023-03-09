@@ -1,4 +1,4 @@
-## stardew mdo dump
+## stardew mod dump
 
 Here's where I'm storing the mods I make for Stardew Valley. Check them out on <a href="https://www.nexusmods.com/users/154664358">Nexus</a> and ModDrop.
 
