@@ -10,4 +10,4 @@ Complete:
 Coming up:
 * Gold Mod - fluctuates gold prices in accordance to real world prices using a gold price API 
 * PokePack - just turn all the animals into pokemon with additional evolution functionality (i hope lol). 
-* Laugh track update - triggers at more events. (Thank you to everyone who added suggestions on Nexus!)
+* Laugh track update - triggers at more events. (thanks if u added suggestions on nexus)
